@@ -1,1 +1,2 @@
-# obsidian-templater-scripts
+# obsidian-templater-templates
+

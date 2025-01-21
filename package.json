@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-templater-scripts",
+  "name": "obsidian-templater-templates",
   "dependencies": {
     "ulid": "^2.3.0"
   },

@@ -3,11 +3,11 @@ import modules from 'node:module'
 import process from 'node:process'
 import esbuild from 'esbuild'
 
-const SRCS_DIR = './srcs'
+const FUNCS_DIR = './functions'
 const DIST_DIR = './dist'
 
 const build = async (entry: string): Promise<void> => {
-  const infile = `${SRCS_DIR}/${entry}.ts`
+  const infile = `${FUNCS_DIR}/${entry}.ts`
   const outfile = `${DIST_DIR}/${entry}.js`
 
   if (!fs.existsSync(infile)) {
@@ -39,7 +39,7 @@ const arg = process.argv[2]?.trim()
 
 if (arg === undefined || arg === '') {
   const entries = fs
-    .readdirSync(SRCS_DIR)
+    .readdirSync(FUNCS_DIR)
     .filter((entry) => entry.endsWith('.ts'))
     .map((entry) => entry.replace(/\.ts$/, ''))
   for (const entry of entries) {
