@@ -1,2 +1,1 @@
-# obsidian-templater-templates
-
+# obsidian-templater-functions

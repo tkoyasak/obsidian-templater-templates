@@ -1,5 +1,6 @@
 {
-  "name": "obsidian-templater-templates",
+  "name": "obsidian-templater-functions",
+  "description": "A collection of functions for use with Obsidian Templater plugin.",
   "dependencies": {
     "ulid": "^2.3.0"
   },
